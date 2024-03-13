@@ -1,4 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.btn-bg{
+    background-image: linear-gradient(to top right, #2563eb, #15803d );
+}
+
+.animate{
+    transition: transform 0.7s ease;
+}
+
+@keyframes floatUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .floating-image {
+    animation: floatUpDown 3s ease-in-out infinite;
+  }
