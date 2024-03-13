@@ -4,25 +4,37 @@ import Claimcard from "./Claimcard";
 const Banner = () => {
   return (
     <>
-      <div className="flex flex-col-reverse md:flex-row bg-transparent lg:px-24 md:px-16  md:mt-8  py-6 justify-between  items-center">
-        <div className="md:w-[55%] w-[85%] gap-3 font-custom flex flex-col lg:gap-9 md:gap-4 ">
-          <h1 className="lg:text-[60px] text-[30px] leading-[41px] md:text-[45px] lg:leading-[71px] md:leading-[56px]   text-[#152330] ">
-            Building the <b className=" font-extrabold text-transparent bg-clip-text bg-gradient-to-l from-[#2DA4A2]  to-[#346899]">Future </b>
-            on the <b className=" font-extrabold text-transparent bg-clip-text bg-gradient-to-l from-[#2DA4A2]  to-[#346899]">CodeVertix</b>
-          </h1>
-          <p className="lg:text-[14px] md:text-[12px] leading-[30px] text-[#949494]">
-          We unite as seasoned developers, technical experts, and strategic minds, dedicated to crafting impeccable products. With a wealth of experience, we ensure every detail is meticulously attended to. Our commitment is unwavering, striving for excellence with each endeavor. Join us on the journey towards innovation and perfection.
+      <div className="flex flex-col-reverse font-custom gap-32  md:flex-row bg-transparent lg:px-16 md:px-16  md:pt-[150px]  py-6 justify-start  items-center">
+        <div className="w-[41%]">
+          <h5 class="text-white font-bold text-[16px] sm:text-[18px] uppercase">
+            Green Energy Revolution
+          </h5>
+          <h2 class="font-extrabold  text-[32px] sm:text-[42px] md:text-[52px] text-green-600 mt-3">
+            A utility token for{" "}
+          </h2>
+          <h2 class="font-extrabold  text-[28px] sm:text-[42px] md:text-[52px] text-green-600">
+            sustainable fracking in the oil and gas sector
+          </h2>
+          <p class="text-[#ADA9B2] text-[17px] sm:text-[20px] my-5">
+            Enter a world where green technologies and sustainable fracking are
+            redefining the boundaries of the energy industry. Learn how an
+            innovative utility token is paving the way to a green oil and gas
+            industry while driving the energy transition.
           </p>
-          <button  className="lg:w-[164px] w-[132px] lg:h-[49px] md:w-[135px] h-[40px] md:h-[45px] btn hover:shadow-lg text-[12px] lg:text-[16px] leading-4 ">
-            Let’s get started!
-          </button>
+          <div class="py-2 flex items-center gap-6 flex-wrap">
+            <button class="rounded text-[16px] relative overflow-hidden inline-flex group items-center justify-center px-6 py-2  cursor-pointer active:shadow-none shadow-lg btn-bg text-white">
+              <span class="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-32 group-hover:h-32 opacity-10"></span>
+              <a href="/assets/WHITEPAPER-5dac0a59.pdf">
+                {" "}
+                <span class="relative">Whitepaper</span>
+              </a>
+            </button>
+          </div>
         </div>
-        <div className="relative" >
-          <Claimcard/>
+        <div className="relative">
+          <Claimcard />
         </div>
       </div>
-
-      
     </>
   );
 };
